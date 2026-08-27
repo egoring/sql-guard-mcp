@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "sql-guard-mcp": {
+      "command": "sql-guard-mcp",
+      "env": {
+        "SQLGUARD_ALLOWED_TABLES": "campaigns,daily_stats",
+        "SQLGUARD_MAX_ROWS": "200"
+      }
+    }
+  }
+}
