@@ -18,7 +18,7 @@ Giving an LLM agent raw database access is a footgun. This MCP server opens a SQ
 | **Execution cap** | Runaway queries (cartesian joins) | SQLite progress-handler watchdog aborts after N VM steps with an actionable message |
 | **OS-level read-only** | Everything above failing | Connection opened with `mode=ro` — the last line of defense, enforced by SQLite itself |
 
-The design principle comes from building decision guards for a LLM agent: **don't trust the model to be careful — make carelessness impossible, and make every rejection message tell the agent what to do instead.**
+The design principle comes from building guards for an LLM agent in a capstone project:: **don't trust the model to be careful — make carelessness impossible, and make every rejection message tell the agent what to do instead.**
 
 ## Tools
 
